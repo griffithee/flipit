@@ -1,0 +1,120 @@
+html {
+  height: 100;
+  background: linear-gradient(#919191, #F2F2F2);
+}
+
+body {
+  height: 95%;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 150%;
+}  
+
+.mainBox {
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+  
+.centerBox {
+  width: 50%;
+  min-width: 250px;
+  height: 50%;
+  min-height: 300px;
+  margin: 2% auto 0px auto;
+  border: 1px solid black;
+  text-align: center;
+  overflow: hidden;
+  background-image: url("https://img06.deviantart.net/cdaf/i/2011/290/a/5/notecard_photoshop_patterns_by_perkeyburger-d4d6rnf.png");
+}
+
+.catBox {
+  width: 90%;
+  height: 20%;
+  margin: auto;
+}
+
+.catItem {
+  display: inline-block;
+  position: relative;
+  width: 33.4%;
+  margin: 5px -5px 0px 0px;
+  padding: 0px;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+  
+.catAdd {
+  width: 8%;
+}
+
+.navBar {
+  width: 50%;
+  min-width: 250px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 0px;
+  overflow: hidden;
+}
+  
+.navButton {
+  display: inline-block;
+  position: relative;
+  width: 33.3%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.setButton {
+  display: block;
+  width: 33%;
+  margin: auto;
+  padding: 0px;
+  height: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.AACButton {
+  display: block;
+  width: 33%;
+  margin: 20px auto;
+  padding: 0px;
+  height: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.AECButton {
+  display: inline-block;
+  width: 33%;
+  margin: 20px auto;
+  padding: 0px;
+  height: 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card {
+  padding-top: 14%;
+}
+  
+.Remove {
+  position: absolute;
+  transform: translate(4px,0px);
+  color: red;
+  z-index: 10;
+}
+  
+  
