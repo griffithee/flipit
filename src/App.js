@@ -19,7 +19,7 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   
- handleClick(click) {
+  handleClick(click) {
     click.preventDefault();
     this.setState({ isFlipped: !this.state.isFlipped });
   }  
@@ -48,16 +48,17 @@ class App extends Component {
                 <div key="front">
                     <h2>{card.title}</h2>
                     <p>{card.front}</p>
+                   <button onClick={this.handleClick}>FLIP</button>
                 </div>
                 <div key="back">
                     <p>{card.back}</p>
+                   <button onClick={this.handleClick}>FLIP</button>
                 </div>
                 </ReactCardFlip>
               </Col>
                 )
           })}
       </Row>
-      <button onClick={this.handleClick}>FLIP</button>
       <button onClick={this.addNewCard}>ADD</button>
       </Grid>
     );
