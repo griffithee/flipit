@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-bootstrap": "^0.30.10",
-    "react-card-flip": "0.0.4",
+    "react-card-flip": "git://github.com/ErkanSensei/react-card-flip.git",
     "react-dom": "^15.5.4",
     "react-flipcard": "^0.2.1"
   },
