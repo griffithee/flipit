@@ -27,9 +27,9 @@ class App extends Component {
   addNewCard = () => {
     let { cards, index } = this.state;
     cards.push({
-      title: 'Card #' + index,
-      front: 'I am card ' + index,
-      back: 'Back #' + index
+      title: 'QUESTION #' + index,
+      front: 'CARD INFO',
+      back: 'ANSWER SHORT'
     })
     index++;
     this.setState({
@@ -45,21 +45,21 @@ class App extends Component {
           return (
             <Col md={12} key={index}>
               <ReactCardFlip isFlipped={this.state.isFlipped}>
-                <div key="front">
-                    <h2>{card.title}</h2>
+                <div key="front" id="defCard">
+                    <h3>{card.title}</h3>
                     <p>{card.front}</p>
-                   <button onClick={this.handleClick}>FLIP</button>
+                   <button id="defBut" onClick={this.handleClick}>FLIP</button>
                 </div>
-                <div key="back">
+                <div key="back" id="defCard">
                     <p>{card.back}</p>
-                   <button onClick={this.handleClick}>FLIP</button>
+                   <button id="defBut" onClick={this.handleClick}>FLIP</button>
                 </div>
                 </ReactCardFlip>
               </Col>
                 )
           })}
       </Row>
-<button onClick={this.addNewCard}>ADD</button>
+<button id="defButAdd" onClick={this.addNewCard}>ADD</button>
       </Grid>
     );
   }
