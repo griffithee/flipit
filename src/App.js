@@ -2,18 +2,55 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import FlipCard from 'react-flipcard'
+import {
+  Grid,
+  Row,
+  Col
+} from 'react-bootstrap'
+
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      cards: [],
+      index: 0
+    }
+  }
+
+  addNewCard = () => {
+    let { cards, index } = this.state;
+    cards.push({
+      title: 'Card #' + index,
+      front: 'I am card ' + index,
+      back: 'Back #' + index
+    })
+    index++;
+    this.setState({
+      cards, index
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>HELLO WORLD</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Grid>
+        <Row>
+        {this.state.cards.map((card, index) => {
+          return (
+            <Col md={12} key={index}>
+          <div>
+            <h2>{card.title}</h2>
+            <p>{card.front}</p>
+          </div>
+          <div>
+            <p>{card.back}</p>
+          </div>
+        </Col>
+          )
+        })}
+      </Row>
+      <button onClick={this.addNewCard}>CLICK ME</button>
+      </Grid>
     );
   }
 }
