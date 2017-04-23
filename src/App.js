@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import FlipCard from 'react-flipcard'
 import {
   Grid,
   Row,
