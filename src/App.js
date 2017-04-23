@@ -58,8 +58,8 @@ class App extends Component {
               </Col>
                 )
           })}
+          <button id="defButAdd" onClick={this.addNewCard}>ADD</button>
       </Row>
-<button id="defButAdd" onClick={this.addNewCard}>ADD</button>
       </Grid>
     );
   }
