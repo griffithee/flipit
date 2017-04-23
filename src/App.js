@@ -49,18 +49,17 @@ class App extends Component {
                     <h2>{card.title}</h2>
                     <p>{card.front}</p>
                    <button onClick={this.handleClick}>FLIP</button>
-                  <button onClick={this.addNewCard}>ADD</button>
                 </div>
                 <div key="back">
                     <p>{card.back}</p>
                    <button onClick={this.handleClick}>FLIP</button>
-                  <button onClick={this.addNewCard}>ADD</button>
                 </div>
                 </ReactCardFlip>
               </Col>
                 )
           })}
       </Row>
+<button onClick={this.addNewCard}>ADD</button>
       </Grid>
     );
   }
